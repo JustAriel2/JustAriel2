@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    background: url("https://diavlos-tugs.gr/wp-content/uploads/2015/10/site-bg.jpg") center center/cover no-repeat;
+    margin-top: 100px;
+    width: 70%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 4px solid black;
+    z-index: -1;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transform: translateX(400%);
+    transition: transform 0.8s ease;
+}
+
+.header:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.header.show {
+  transform: translateX(0);
+}
+
+.header .header__h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.header .header__h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px black;
+    font-size: large;
+}
+
+.header .header__hr {
+    border-bottom: none;
+    width: 70%;
+    color: black;
+    background-color: #000;
+}
+
+.header .header__text {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: right;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+/*slider*/
+/* Slideshow container */
+.slideshow-container {
+    border-radius: 8px;
+    border: 4px solid black;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+h3 {
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    text-shadow: 3px 3px solid black;
+}
+
+.container-3 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.made {
+    background: url("https://www.allderglass.co.uk/wp-content/uploads/2018/09/project-background.jpg") center center/cover no-repeat;
+    position: relative;
+}
+
+.made .made__text {
+  text-align: center;
+  margin-top: 200px;
+}
+
+/*  .made img {
+    transform:translateX(-100%);
+    margin-left: 280px;
+    margin-top: 90px;
+    z-index: 100;
+    width: 400px;
+    height: 200px;
+    left: 200px;
+    bottom: 30px; 
+    border: 4px solid black;
+    border-radius: 16px;
+} */
+
+.made .made__text {
+    font-weight: bold;
+    line-height: 40px;
+    font-size: xx-large;
+}
+
+.its200px {
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+
+.made .made__h1 {
+  font-weight: bold;
+  text-align: center;
+  
+}
